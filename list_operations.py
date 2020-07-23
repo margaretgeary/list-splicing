@@ -101,9 +101,9 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
 
-
+##6
 def inner_four_end(input_list):
     """Return the elements that are 6th, 5th, 4th, and 3rd from the end of input_list.
 
@@ -117,9 +117,9 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    return input_list[-6:-2]
 
-
+##5
 def replace_head(input_list):
     """Replace the head of input_list with the value 42 and return nothing.
 
@@ -132,9 +132,9 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
 
-
+##4
 def replace_third_and_last(input_list):
     """Replace third and last elements of input_list with 37 and return nothing.
 
@@ -147,9 +147,10 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
-
+##3
 def replace_middle(input_list):
     """Replace all elements of a list but the first two and last two with 42 and 37.
 
@@ -166,9 +167,9 @@ def replace_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = [42, 37]
 
-
+##2
 def delete_third_and_seventh(input_list):
     """Remove third and seventh elements of input_list and return nothing.
 
@@ -181,9 +182,9 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    return input_list.pop(2).pop(6)
 
-
+##1
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
 
