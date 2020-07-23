@@ -181,9 +181,10 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
-    return input_list.pop(2).pop(6)
-
+    indices = [2, 6]
+    for index in sorted(indices, reverse=True):
+        del input_list[index]
+    
 ##1
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
@@ -198,9 +199,9 @@ def delete_middle(input_list):
     True
 
     """
-
-    pass
-
+    indices = [2, 3, 4, 5]
+    for index in sorted(indices, reverse=True):
+        del input_list[index]
 
 # This is the part were we actually run the doctests.
 
